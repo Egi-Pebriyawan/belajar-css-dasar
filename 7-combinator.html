@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>combinator</title>
+    <style>
+      div ~ p {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>descendant selector, memilih elemen anak dari elemen yang dipilih</p>
+    <p>child selector, memilih langsung dari induknya bedanya ada tanda > aja</p>
+    <p>adjacent sibling selector, memilih element setelah element yang dipilih tandanya +</p>
+    <p>general sibling menggunakan tanda ~</p>
+    <div>
+      <article>
+        <p>ini dipilih</p>
+      </article>
+      <p>ini dipilih</p>
+    </div>
+    <p>ini dipilih jika adjacent sibling</p>
+  </body>
+</html>
